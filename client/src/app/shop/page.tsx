@@ -3,7 +3,7 @@ import ProductCard from "@/components/products/ProductCard";
 import { getAllProducts } from "@/lib/api/ProductApi";
 import { useEffect, useState } from "react";
 import Filter from "@/components/filters/Filter";
-import { dummyProducts } from "@/constants/Products";
+import { DummyProducts } from "@/constants/DummyProducts";
 
 const Shop = () => {
   // const [products, setProducts] = useState([]);
@@ -50,7 +50,7 @@ const Shop = () => {
         </div>
         {/* PRODUCT CARD */}
         <div className="grid grid-cols-2 gap-3">
-          {dummyProducts.map((p) => {
+          {DummyProducts.map((p) => {
             return <ProductCard product={p} key={p.id} />;
           })}
         </div>

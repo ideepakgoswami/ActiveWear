@@ -1,7 +1,7 @@
 "use client";
 import { createContext, ReactNode, useState } from "react";
 import { FilterContextType } from "@/types/Filter";
-import { dummyProducts } from "@/constants/Products";
+import { DummyProducts } from "@/constants/DummyProducts";
 
 //create context
 export const FilterContext = createContext<FilterContextType | undefined>(
@@ -26,7 +26,7 @@ export const FilterProvider = ({ children }: { children: ReactNode }) => {
     return matchCategory && matchPrice && matchRating;
   };
 
-  const filterProducts = dummyProducts.filter(filtering);
+  const filterProducts = DummyProducts.filter(filtering);
 
   return (
     <FilterContext.Provider

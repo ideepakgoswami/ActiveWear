@@ -3,7 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    domains: ["https://fakestoreapi.in/api/"],
+    domains: [
+      "prod-img.thesouledstore.com",
+      "image.hm.com",
+      "cdn.zeptonow.com",
+    ],
   },
 };
 

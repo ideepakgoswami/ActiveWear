@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ProductCard = ({ product }: { product: Product }) => {
-  const ShortText = (str: string) => {
-    const words = str.split(" ");
-    return words.length <= 2 ? str : words.slice(0, 2).join(" ");
+  const ShortText = (text: string) => {
+    const words = text.split(" ");
+    return words.length <= 2 ? text : words.slice(0, 2).join(" ");
   };
 
   return (
